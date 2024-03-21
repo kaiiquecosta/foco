@@ -11,7 +11,7 @@ const iniciarOuPausarBtn = document.querySelector('#start-pause span')
 const playPauseIcon = document.querySelector('.app__card-primary-butto-icon')
 const tempoNaTela = document.querySelector('#timer')
 
-const musica = new Audio('/sons/travis scott - telekinesis ⟨ slowed + reverb ⟩_t_2i1IN0-2o.mp3')
+const musica = new Audio('foco/sons/travis scott - telekinesis ⟨ slowed + reverb ⟩_t_2i1IN0-2o.mp3')
 musica.loop = true
 const somPlay = new Audio('/sons/play.wav')
 const somPause = new Audio('/sons/pause.mp3')
