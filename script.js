@@ -11,7 +11,7 @@ const iniciarOuPausarBtn = document.querySelector('#start-pause span')
 const playPauseIcon = document.querySelector('.app__card-primary-butto-icon')
 const tempoNaTela = document.querySelector('#timer')
 
-const musica = new Audio('/sons/glory box - portishead (slowed + reverb)_H9m0bGyV52Y.mp3')
+const musica = new Audio('/sons/Playboi Carti - bando.mp3')
 musica.loop = true
 const somPlay = new Audio('/sons/play.wav')
 const somPause = new Audio('/sons/pause.mp3')
