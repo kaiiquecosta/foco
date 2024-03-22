@@ -11,11 +11,11 @@ const iniciarOuPausarBtn = document.querySelector('#start-pause span')
 const playPauseIcon = document.querySelector('.app__card-primary-butto-icon')
 const tempoNaTela = document.querySelector('#timer')
 
-const musica = new Audio('sons/travis scott - telekinesis ⟨ slowed + reverb ⟩_t_2i1IN0-2o.mp3')
+const musica = new Audio('./sons/glory box - portishead (slowed + reverb)_H9m0bGyV52Y.mp3')
 musica.loop = true
-const somPlay = new Audio('sons/play.wav')
-const somPause = new Audio('sons/pause.mp3')
-const somBeep = new Audio('sons/beep.mp3')
+const somPlay = new Audio('./sons/play.wav')
+const somPause = new Audio('./sons/pause.mp3')
+const somBeep = new Audio('./sons/beep.mp3')
 
 let tempoDecorridoEmSegundos = 1500 // = 25 min
 let intervaloId = null
@@ -54,7 +54,7 @@ function alterarContexto(contexto) {
     })
 
     html.setAttribute('data-contexto', contexto)
-    banner.setAttribute('src', `/imagens/${contexto}.png`)
+    banner.setAttribute('src', `./imagens/${contexto}.png`)
 
     switch (contexto) {
         case "foco":
@@ -103,13 +103,13 @@ function iniciarOuPausar() {
     }
     somPlay.play()
     intervaloId = setInterval(contagemRegressiva, 1000) //1000 = 1 segundo
-    playPauseIcon.setAttribute('src', `/imagens/pause.png`)
+    playPauseIcon.setAttribute('src', `./imagens/pause.png`)
     iniciarOuPausarBtn.textContent = "Pausar"
 }
 
 function zerar() {
     clearInterval(intervaloId)
-    playPauseIcon.setAttribute('src', `/imagens/play_arrow.png`)
+    playPauseIcon.setAttribute('src', `./imagens/play_arrow.png`)
     iniciarOuPausarBtn.textContent = 'Começar'
     intervaloId = null
 }
